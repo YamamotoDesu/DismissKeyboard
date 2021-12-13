@@ -66,3 +66,21 @@ class ViewController: UIViewController {
 <img width="358" alt="iPhone_12" src="https://user-images.githubusercontent.com/47273077/145736591-223d5147-79df-42e8-a58b-bdfa840d5baf.png">
 
 
+## Third: what could be better than tapping anywhere on the view controller to dismiss the keyboard.
+Just one line of code would serve our purpose. Add a tap gesture recogniser on self.view, set target as self.view and set selector as endEditing: (in ViewDidLoad() or anywhere you like)
+
+```swift
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+        
+    }
+```

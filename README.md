@@ -23,3 +23,5 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
 }
 ```
+
+This solution seems good enough but not all keyboards have return button.

@@ -84,3 +84,7 @@ class ViewController: UIViewController {
         
     }
 ```
+
+<img width="358" alt="iPhone_12" src="https://github.com/YamamotoDesu/DismissKeyboard/blob/main/DismissKeyboard/tapgesture.gif">
+
+

@@ -9,11 +9,13 @@ This solution seems good enough but not all keyboards have return button.
 class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         text1.delegate = self
+        text2.delegate = self
 
     }
     

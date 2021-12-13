@@ -30,3 +30,36 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
 ## Second way: when textfield has no return keys eg. (UIKeyboardType.numberPad) 
 <img width="350" alt="iPhone_12" src="https://user-images.githubusercontent.com/47273077/145736192-94996fee-a7a1-4286-97be-c859d6f6eaa4.png">
+
+```swift
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var text1: UITextField!
+    @IBOutlet weak var text2: UITextField!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        setupTextFields()
+        
+    }
+    
+    func setupTextFields() {
+        let toolbar = UIToolbar()
+        let flexSpace = UIBarButtonItem(barButtonSystemItem: .flexibleSpace,
+                                        target: nil, action: nil)
+        let doneButton = UIBarButtonItem(title: "Done", style: .done,
+                                         target: self, action: #selector(doneButtonTapped))
+        
+        toolbar.setItems([flexSpace, doneButton], animated: true)
+        toolbar.sizeToFit()
+        
+        text1.inputAccessoryView = toolbar
+        text2.inputAccessoryView = toolbar
+    }
+    
+    @objc func doneButtonTapped() {
+        view.endEditing(true)
+    }
+}
+```

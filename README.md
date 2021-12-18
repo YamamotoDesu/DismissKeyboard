@@ -101,3 +101,6 @@ class ViewController: UIViewController {
         view.addGestureRecognizer(tap)
     }
 ```
+
+## Fourth: If your textfields are added on UIScrollview or any subview of it eg. UITableView, you can use set `keyboard dismiss mode` like below. 
+

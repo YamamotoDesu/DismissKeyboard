@@ -104,3 +104,9 @@ class ViewController: UIViewController {
 
 ## Fourth: If your textfields are added on UIScrollview or any subview of it eg. UITableView, you can use set `keyboard dismiss mode` like below. 
 
+```swift 
+
+        tableView.keyboardDismissMode = .onDrag // or .interactive
+```
+<img width="358" alt="iPhone_12" src="https://github.com/YamamotoDesu/DismissKeyboard/blob/main/DismissKeyboard/dismissMode.gif">
+

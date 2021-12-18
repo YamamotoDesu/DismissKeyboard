@@ -91,10 +91,9 @@ class ViewController: UIViewController {
 
 ## Caveat*: there could be issues if you are dealing with tableviews and adding this tap gesture, selecting the rows, didSelectRowAtIndex path could not be fired until pressed long.
 
-
 <img width="358" alt="iPhone_12" src="https://github.com/YamamotoDesu/DismissKeyboard/blob/main/DismissKeyboard/longPress.gif">
 
-Solution for that is to modify above code as below.
+### Solution for that is to modify above code as below.
 ```swift
  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))

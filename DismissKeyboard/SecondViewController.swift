@@ -14,7 +14,7 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        //tableView.keyboardDismissMode = .onDrag // or .interactive
+        tableView.keyboardDismissMode = .onDrag // or .interactive
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -45,7 +45,7 @@ extension SecondViewController: UITableViewDataSource {
 extension SecondViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
-        //tap.cancelsTouchesInView = false
+        tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
     

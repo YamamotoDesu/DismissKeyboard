@@ -17,6 +17,7 @@
 		7B8E62EF27676B38007DFAC3 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E62EE27676B37007DFAC3 /* SecondViewController.swift */; };
 		7B8E62F3276DB330007DFAC3 /* TextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8E62F2276DB330007DFAC3 /* TextTableViewCell.swift */; };
 		7B8E62F5276DC178007DFAC3 /* longPress.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B8E62F4276DC177007DFAC3 /* longPress.gif */; };
+		7B8E62F7276DC353007DFAC3 /* dismissMode.gif in Resources */ = {isa = PBXBuildFile; fileRef = 7B8E62F6276DC353007DFAC3 /* dismissMode.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		7B8E62EE27676B37007DFAC3 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		7B8E62F2276DB330007DFAC3 /* TextTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextTableViewCell.swift; sourceTree = "<group>"; };
 		7B8E62F4276DC177007DFAC3 /* longPress.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = longPress.gif; sourceTree = "<group>"; };
+		7B8E62F6276DC353007DFAC3 /* dismissMode.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = dismissMode.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 		7B8E62D52765DD75007DFAC3 /* DismissKeyboard */ = {
 			isa = PBXGroup;
 			children = (
+				7B8E62F6276DC353007DFAC3 /* dismissMode.gif */,
 				7B8E62EA2766D05A007DFAC3 /* tapgesture.gif */,
 				7B8E62F4276DC177007DFAC3 /* longPress.gif */,
 				7B8E62D62765DD75007DFAC3 /* AppDelegate.swift */,
@@ -137,6 +140,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B8E62F7276DC353007DFAC3 /* dismissMode.gif in Resources */,
 				7B8E62E32765DD7E007DFAC3 /* LaunchScreen.storyboard in Resources */,
 				7B8E62E02765DD7E007DFAC3 /* Assets.xcassets in Resources */,
 				7B8E62EB2766D05B007DFAC3 /* tapgesture.gif in Resources */,

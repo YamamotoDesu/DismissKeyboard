@@ -87,8 +87,10 @@ class ViewController: UIViewController {
 
 <img width="358" alt="iPhone_12" src="https://github.com/YamamotoDesu/DismissKeyboard/blob/main/DismissKeyboard/tapgesture.gif">
 
-#  Dismiss current keyboard on TableView
 
-<img width="340" alt="iPhone_12" src="https://user-images.githubusercontent.com/47273077/146632720-a88e128b-5bfc-438a-a5d8-9c1375a8261f.png">
 
+## Caveat*: there could be issues if you are dealing with tableviews and adding this tap gesture, selecting the rows, didSelectRowAtIndex path could not be fired until pressed long.
+
+
+<img width="358" alt="iPhone_12" src="https://github.com/YamamotoDesu/DismissKeyboard/blob/main/DismissKeyboard/longPress.gif">
 

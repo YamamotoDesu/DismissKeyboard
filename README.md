@@ -110,3 +110,12 @@ class ViewController: UIViewController {
 ```
 <img width="358" alt="iPhone_12" src="https://github.com/YamamotoDesu/DismissKeyboard/blob/main/DismissKeyboard/dismissMode.gif">
 
+## Additional: Override the touchesBegan function of viewController and call endEditing on self.view 
+```swift 
+override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+    view.endEditing(true)
+}
+```
+
+<img width="358" alt="iPhone_12" src="https://github.com/YamamotoDesu/DismissKeyboard/blob/main/DismissKeyboard/endEditing.gif">
+
